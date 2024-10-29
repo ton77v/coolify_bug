@@ -2,6 +2,7 @@ services:
     app:
         container_name: app
         image: alpine:latest
+        restart: no
         volumes:
             - ../data:/data
         command: [ "cat", "/data/test.txt" ]
