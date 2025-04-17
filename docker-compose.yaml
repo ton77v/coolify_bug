@@ -1,0 +1,12 @@
+# checking the issue status: https://github.com/coollabsio/coolify/issues/5555#issuecomment-2810429464
+# NOT RELATED TO THE ORIGINAL BUG | that one in /src/
+
+services:
+  service_name:
+    build:
+      context: .
+      args:
+        COMMIT_SHA: '${SOURCE_COMMIT}'
+        BUILD_ENV: COOLIFY
+    environment:
+      COOLIFY_URL: ${COOLIFY_URL}
